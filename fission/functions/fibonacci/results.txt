@@ -1,0 +1,564 @@
+
+hey -z 60s -c 10 http://10.4.110.208:31314/fibonacci-single?x=1000
+
+Summary:
+  Total:        60.0098 secs
+  Slowest:      6.3281 secs
+  Fastest:      0.0043 secs
+  Average:      0.0164 secs
+  Requests/sec: 609.6170
+
+  Total data:   3861518565 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.004 [1]     |
+  0.637 [36562] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.269 [0]     |
+  1.901 [0]     |
+  2.534 [0]     |
+  3.166 [0]     |
+  3.799 [0]     |
+  4.431 [0]     |
+  5.063 [0]     |
+  5.696 [0]     |
+  6.328 [20]    |
+
+
+Latency distribution:
+  10% in 0.0102 secs
+  25% in 0.0112 secs
+  50% in 0.0124 secs
+  75% in 0.0139 secs
+  90% in 0.0161 secs
+  95% in 0.0178 secs
+  99% in 0.0249 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0043 secs, 6.3281 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0058 secs
+  resp wait:    0.0144 secs, 0.0026 secs, 6.3261 secs
+  resp read:    0.0020 secs, 0.0000 secs, 0.2102 secs
+
+Status code distribution:
+  [200] 36583 responses
+
+---------------------------------------------------------------
+
+hey -z 300s -c 10 http://10.4.110.208:31314/fibonacci-single?x=1000
+
+Summary:
+  Total:        300.0098 secs
+  Slowest:      6.3324 secs
+  Fastest:      0.0040 secs
+  Average:      0.0182 secs
+  Requests/sec: 548.4321
+
+  Total data:   17367491925 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.004 [1]     |
+  0.637 [164414]        |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.270 [0]     |
+  1.902 [0]     |
+  2.535 [0]     |
+  3.168 [0]     |
+  3.801 [0]     |
+  4.434 [0]     |
+  5.067 [0]     |
+  5.700 [0]     |
+  6.332 [120]   |
+
+
+Latency distribution:
+  10% in 0.0106 secs
+  25% in 0.0117 secs
+  50% in 0.0130 secs
+  75% in 0.0151 secs
+  90% in 0.0172 secs
+  95% in 0.0187 secs
+  99% in 0.0242 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0040 secs, 6.3324 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0037 secs
+  resp wait:    0.0162 secs, 0.0026 secs, 6.3312 secs
+  resp read:    0.0020 secs, 0.0000 secs, 0.2222 secs
+
+Status code distribution:
+  [200] 164535 responses
+
+---------------------------------------------------------------
+
+hey -z 300s -c 50 http://10.4.110.208:31314/fibonacci-single?x=1000
+
+Summary:
+  Total:        305.2867 secs
+  Slowest:      6.4094 secs
+  Fastest:      0.0073 secs
+  Average:      0.0803 secs
+  Requests/sec: 622.2970
+
+  Total data:   20053233345 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.007 [1]     |
+  0.648 [189428]        |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.288 [0]     |
+  1.928 [0]     |
+  2.568 [0]     |
+  3.208 [0]     |
+  3.849 [0]     |
+  4.489 [0]     |
+  5.129 [0]     |
+  5.769 [0]     |
+  6.409 [550]   |
+
+
+Latency distribution:
+  10% in 0.0575 secs
+  25% in 0.0590 secs
+  50% in 0.0610 secs
+  75% in 0.0639 secs
+  90% in 0.0684 secs
+  95% in 0.0728 secs
+  99% in 0.0844 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0073 secs, 6.4094 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0046 secs
+  resp wait:    0.0782 secs, 0.0066 secs, 6.4063 secs
+  resp read:    0.0021 secs, 0.0000 secs, 0.2206 secs
+
+Status code distribution:
+  [200] 189979 responses
+
+---------------------------------------------------------------
+
+hey -z 300s -c 150 http://10.4.110.208:31314/fibonacci-single?x=1000
+
+Summary:
+  Total:        306.2687 secs
+  Slowest:      6.5955 secs
+  Fastest:      0.0088 secs
+  Average:      0.2536 secs
+  Requests/sec: 591.1737
+
+  Total data:   19111577190 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.009 [1]     |
+  0.667 [179707]        |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.326 [0]     |
+  1.985 [0]     |
+  2.643 [0]     |
+  3.302 [0]     |
+  3.961 [0]     |
+  4.620 [0]     |
+  5.278 [0]     |
+  5.937 [0]     |
+  6.596 [1350]  |
+
+
+Latency distribution:
+  10% in 0.1767 secs
+  25% in 0.1821 secs
+  50% in 0.1977 secs
+  75% in 0.2344 secs
+  90% in 0.2450 secs
+  95% in 0.2536 secs
+  99% in 0.2922 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0088 secs, 6.5955 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0062 secs
+  resp wait:    0.2515 secs, 0.0079 secs, 6.5942 secs
+  resp read:    0.0021 secs, 0.0000 secs, 0.2101 secs
+
+Status code distribution:
+  [200] 181058 responses
+
+---------------------------------------------------------------
+Multiple
+---------------------------------------------------------------
+
+hey -z 60s -c 10 http://10.4.110.208:31314/fibonacci?x=1000
+
+Summary:
+  Total:        60.0663 secs
+  Slowest:      0.1884 secs
+  Fastest:      0.0040 secs
+  Average:      0.0532 secs
+  Requests/sec: 187.9092
+
+  Total data:   1191399285 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.004 [1]     |
+  0.022 [5226]  |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.041 [56]    |
+  0.059 [9]     |
+  0.078 [42]    |
+  0.096 [5881]  |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.115 [70]    |
+  0.133 [1]     |
+  0.152 [0]     |
+  0.170 [0]     |
+  0.188 [1]     |
+
+
+Latency distribution:
+  10% in 0.0113 secs
+  25% in 0.0128 secs
+  50% in 0.0841 secs
+  75% in 0.0891 secs
+  90% in 0.0910 secs
+  95% in 0.0922 secs
+  99% in 0.0954 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0040 secs, 0.1884 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0004 secs
+  resp wait:    0.0519 secs, 0.0029 secs, 0.1875 secs
+  resp read:    0.0013 secs, 0.0000 secs, 0.0780 secs
+
+Status code distribution:
+  [200] 11287 responses
+
+---------------------------------------------------------------
+
+hey -z 300s -c 10 http://10.4.110.208:31314/fibonacci?x=1000
+
+Summary:
+  Total:        300.0489 secs
+  Slowest:      6.5995 secs
+  Fastest:      0.0030 secs
+  Average:      0.0575 secs
+  Requests/sec: 174.0216
+
+  Total data:   5511554325 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.003 [1]     |
+  0.663 [52194] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.322 [0]     |
+  1.982 [0]     |
+  2.642 [0]     |
+  3.301 [0]     |
+  3.961 [0]     |
+  4.621 [0]     |
+  5.280 [0]     |
+  5.940 [0]     |
+  6.600 [20]    |
+
+
+Latency distribution:
+  10% in 0.0114 secs
+  25% in 0.0131 secs
+  50% in 0.0849 secs
+  75% in 0.0896 secs
+  90% in 0.0921 secs
+  95% in 0.0939 secs
+  99% in 0.0971 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0030 secs, 6.5995 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0015 secs
+  resp wait:    0.0562 secs, 0.0025 secs, 6.5982 secs
+  resp read:    0.0012 secs, 0.0000 secs, 0.0905 secs
+
+Status code distribution:
+  [200] 52215 responses
+
+---------------------------------------------------------------
+
+hey -z 300s -c 50 http://10.4.110.208:31314/fibonacci?x=1000
+
+Summary:
+  Total:        300.2932 secs
+  Slowest:      6.6892 secs
+  Fastest:      0.0039 secs
+  Average:      0.2993 secs
+  Requests/sec: 166.9802
+
+  Total data:   5292844365 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.004 [1]     |
+  0.672 [49992] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.341 [0]     |
+  2.010 [0]     |
+  2.678 [0]     |
+  3.347 [0]     |
+  4.015 [0]     |
+  4.684 [3]     |
+  5.352 [1]     |
+  6.021 [0]     |
+  6.689 [146]   |
+
+
+Latency distribution:
+  10% in 0.2117 secs
+  25% in 0.2181 secs
+  50% in 0.2912 secs
+  75% in 0.3011 secs
+  90% in 0.3815 secs
+  95% in 0.3897 secs
+  99% in 0.4002 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0039 secs, 6.6892 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0027 secs
+  resp wait:    0.2980 secs, 0.0031 secs, 6.6877 secs
+  resp read:    0.0012 secs, 0.0001 secs, 0.0928 secs
+
+Status code distribution:
+  [200] 50143 responses
+
+---------------------------------------------------------------
+
+ hey -z 300s -c 150 http://10.4.110.208:31314/fibonacci?x=1000
+
+Summary:
+  Total:        300.8031 secs
+  Slowest:      7.2167 secs
+  Fastest:      0.0098 secs
+  Average:      0.8534 secs
+  Requests/sec: 175.5268
+
+  Total data:   5573198445 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.010 [1]     |
+  0.730 [7307]  |■■■■■■
+  1.451 [45341] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.172 [0]     |
+  2.893 [0]     |
+  3.613 [0]     |
+  4.334 [1]     |
+  5.055 [84]    |
+  5.775 [0]     |
+  6.496 [0]     |
+  7.217 [65]    |
+
+
+Latency distribution:
+  10% in 0.7165 secs
+  25% in 0.7930 secs
+  50% in 0.8045 secs
+  75% in 0.8960 secs
+  90% in 0.9994 secs
+  95% in 1.0707 secs
+  99% in 1.1039 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0098 secs, 7.2167 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0225 secs
+  resp wait:    0.8516 secs, 0.0065 secs, 7.2156 secs
+  resp read:    0.0017 secs, 0.0002 secs, 0.0811 secs
+
+Status code distribution:
+  [200] 52799 responses
+
+---------------------------------------------------------------
+
+hey -z 300s -c 250 http://10.4.110.208:31314/fibonacci?x=1000
+
+Summary:
+  Total:        300.2757 secs
+  Slowest:      18.0337 secs
+  Fastest:      0.0032 secs
+  Average:      0.4998 secs
+  Requests/sec: 499.9839
+
+  Total data:   15847288815 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.003 [1]     |
+  1.806 [144942]        |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.609 [0]     |
+  5.412 [44]    |
+  7.215 [4689]  |■
+  9.018 [0]     |
+  10.822 [0]    |
+  12.625 [0]    |
+  14.428 [354]  |
+  16.231 [0]    |
+  18.034 [103]  |
+
+
+Latency distribution:
+  10% in 0.2436 secs
+  25% in 0.2531 secs
+  50% in 0.2643 secs
+  75% in 0.2813 secs
+  90% in 0.3078 secs
+  95% in 0.3784 secs
+  99% in 6.5452 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0032 secs, 18.0337 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0285 secs
+  resp wait:    0.4973 secs, 0.0023 secs, 17.8432 secs
+  resp read:    0.0024 secs, 0.0000 secs, 0.2944 secs
+
+Status code distribution:
+  [200] 150133 responses
+
+---------------------------------------------------------------
+
+hey -z 300s -c 1000 http://10.4.110.208:31314/fibonacci?x=1000
+
+Summary:
+  Total:        301.1712 secs
+  Slowest:      19.4067 secs
+  Fastest:      0.0761 secs
+  Average:      3.0881 secs
+  Requests/sec: 323.1983
+
+  Total data:   10274512590 bytes
+  Size/request: 105555 bytes
+
+Response time histogram:
+  0.076 [1]     |
+  2.009 [61339] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.942 [136]   |
+  5.875 [27579] |■■■■■■■■■■■■■■■■■■
+  7.808 [4096]  |■■■
+  9.741 [25]    |
+  11.675 [9]    |
+  13.608 [9]    |
+  15.541 [452]  |
+  17.474 [3253] |■■
+  19.407 [439]  |
+
+
+Latency distribution:
+  10% in 0.9507 secs
+  25% in 0.9930 secs
+  50% in 1.0782 secs
+  75% in 5.1689 secs
+  90% in 5.7617 secs
+  95% in 7.0034 secs
+  99% in 17.0207 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0007 secs, 0.0761 secs, 19.4067 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0882 secs
+  resp wait:    2.9149 secs, 0.0460 secs, 19.0939 secs
+  resp read:    0.1723 secs, 0.0001 secs, 4.1242 secs
+
+Status code distribution:
+  [200] 97338 responses
+
+---------------------------------------------------------------
+
+hey -z 300s -c 250 http://0.0.0.0:32769
+
+Summary:
+  Total:        300.9927 secs
+  Slowest:      1.1602 secs
+  Fastest:      0.0106 secs
+  Average:      1.0212 secs
+  Requests/sec: 244.4046
+
+  Total data:   7838538456 bytes
+  Size/request: 106554 bytes
+
+Response time histogram:
+  0.011 [1]     |
+  0.126 [29]    |
+  0.241 [24]    |
+  0.355 [31]    |
+  0.470 [28]    |
+  0.585 [28]    |
+  0.700 [31]    |
+  0.815 [22]    |
+  0.930 [26]    |
+  1.045 [59073] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.160 [14271] |■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 0.9871 secs
+  25% in 1.0026 secs
+  50% in 1.0197 secs
+  75% in 1.0387 secs
+  90% in 1.0612 secs
+  95% in 1.0766 secs
+  99% in 1.1163 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0106 secs, 1.1602 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0191 secs
+  resp wait:    1.0209 secs, 0.0059 secs, 1.1600 secs
+  resp read:    0.0002 secs, 0.0000 secs, 0.0119 secs
+
+Status code distribution:
+  [200] 73564 responses
+
+---------------------------------------------------------------
+
+ hey -z 300s -c 1000 http://0.0.0.0:32769
+
+Summary:
+  Total:        303.9439 secs
+  Slowest:      4.4559 secs
+  Fastest:      0.0996 secs
+  Average:      4.0100 secs
+  Requests/sec: 247.7168
+
+  Total data:   8022663768 bytes
+  Size/request: 106554 bytes
+
+Response time histogram:
+  0.100 [1]     |
+  0.535 [99]    |
+  0.971 [116]   |
+  1.406 [103]   |
+  1.842 [108]   |
+  2.278 [112]   |
+  2.713 [106]   |
+  3.149 [106]   |
+  3.585 [120]   |
+  4.020 [36887] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.456 [37534] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+Latency distribution:
+  10% in 3.9218 secs
+  25% in 3.9568 secs
+  50% in 4.0198 secs
+  75% in 4.0922 secs
+  90% in 4.1573 secs
+  95% in 4.2137 secs
+  99% in 4.3467 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0008 secs, 0.0996 secs, 4.4559 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0001 secs, 0.0000 secs, 0.0217 secs
+  resp wait:    4.0088 secs, 0.0415 secs, 4.4550 secs
+  resp read:    0.0002 secs, 0.0000 secs, 0.0208 secs
+
+Status code distribution:
+  [200] 75292 responses
