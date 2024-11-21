@@ -1,0 +1,32 @@
+controller:
+  replicaCount: 2
+whisk:
+  ingress:
+    type: NodePort
+    apiHostName: 10.4.110.208
+    apiHostPort: 31001
+  limits:
+    actionsInvokesPerminute: 75000
+    actionsInvokesConcurrent: 250
+    triggersFiresPerminute: 75000
+    actionsSequenceMaxlength: 75000
+    actions:
+      minuteRate: 75000
+      concurrency:
+        min: 1
+        max: 1000
+        std: 150
+    activation:
+      payload:
+        max: "1048576"
+k8s:
+  persistence:
+    enabled: false
+nginx:
+  httpsNodePort: 31001
+invoker:
+  containerFactory:
+    impl: "kubernetes"
+metrics:
+  prometheusEnabled: true
+  userMetricsEnabled: true
